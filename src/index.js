@@ -1,9 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-<<<<<<< HEAD
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-=======
->>>>>>> d7e2b96b2e6c90f9165466170a89965ac5a3f6a3
 import './style.css';
 import './menu.css';
 import './animation.css'
