@@ -2,14 +2,9 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Redirect,
-  withRouter,
   Route,
-  Outlet,
   Link
 } from "react-router-dom";
-import logo from './images/nope1.jpg';
-import {BlogPage} from './blogpage'
 import uncheck from './function.js'
 import Blog from './Blog'
 

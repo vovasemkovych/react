@@ -651,6 +651,42 @@ article {
 		display: flex;
 		flex-wrap: wrap !important;
 	}
+	.navibar{
+		display: none;
+	}
+	.container-fluid{
+		max-width: 100%;
+	}
+	.arrowB{
+		display: none;
+	}
+	.h1Blog{
+		margin-right: 1em;
+		margin-left: 1em;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+	.container {
+    width: 100%;
+    height: 100%;
+    padding-right: 0em;
+    padding-top: 0em;
+	}
+	.imgPost {
+	display: none;
+	}
+	.abss p {
+		font-size: 10px;
+	}
+	.utopic {
+     padding-top: 0; 
+    margin-bottom: 0; 
+	}
+	.arrow {
+    height: 10vw;
+    width: 10vw;
+	margin-top: 1em;	   
+	}
 }
 @media screen and (max-width:960px) {
 	.imgAboutB {
@@ -697,7 +733,44 @@ article {
 		display: flex;
 		flex-wrap: wrap !important;
 	}
+	.navibar{
+		display: none;
+	}
+	.container-fluid{
+		max-width: 100%;
+	}
+	.arrowB{
+		display: none;
+	}
+	.h1Blog{
+		margin-right: 1em;
+		margin-left: 1em;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+	.container {
+    width: 100%;
+    height: 100%;
+    padding-right: 0em;
+    padding-top: 0em;
+	}
+	.imgPost {
+	display: none;
+	}
+	.abss p {
+		font-size: 10px;
+	}
+	.utopic {
+     padding-top: 0; 
+    margin-bottom: 0; 
+	}
+	.arrow {
+    height: 10vw;
+    width: 10vw;
+	margin-top: 1em;	   
+	}
 }
+
 @media screen and (max-device-width:425px) {
 	.imgAboutB {
 		width: 63em;
@@ -734,6 +807,42 @@ article {
 	.flexAbout {
 		display: flex;
 		flex-wrap: wrap !important;
+	}
+	.navibar{
+		display: none;
+	}
+	.container-fluid{
+		max-width: 100%;
+	}
+	.arrowB{
+		display: none;
+	}
+	.h1Blog{
+		margin-right: 1em;
+		margin-left: 1em;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+	.container {
+    width: 100%;
+    height: 100%;
+    padding-right: 0em;
+    padding-top: 0em;
+	}
+	.imgPost {
+	display: none;
+	}
+	.abss p {
+		font-size: 10px;
+	}
+	.utopic {
+     padding-top: 0; 
+    margin-bottom: 0; 
+	}
+	.arrow {
+    height: 10vw;
+    width: 10vw;
+	margin-top: 1em;	   
 	}
 }
 @media screen and (max-width:425px) {
@@ -772,5 +881,41 @@ article {
 	.flexAbout {
 		display: flex;
 		flex-wrap: wrap !important;
+	}
+	.navibar{
+		display: none;
+	}
+	.container-fluid{
+		max-width: 100%;
+	}
+	.arrowB{
+		display: none;
+	}
+	.h1Blog{
+		margin-right: 1em;
+		margin-left: 1em;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+	.container {
+    width: 100%;
+    height: 100%;
+    padding-right: 0em;
+    padding-top: 0em;
+	}
+	.imgPost {
+	display: none;
+	}
+	.abss p {
+		font-size: 10px;
+	}
+	.utopic {
+     padding-top: 0; 
+    margin-bottom: 0; 
+	}
+	.arrow {
+    height: 10vw;
+    width: 10vw;
+	margin-top: 1em;	   
 	}
 }

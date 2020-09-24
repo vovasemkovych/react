@@ -2,17 +2,17 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Redirect,
   withRouter,
   Route,
-  Outlet,
-  useParams,
   Link
 } from "react-router-dom";
 import logo from './images/nope1.jpg';
 import {BlogPage} from './blogpage'
 import {BlogPage1} from './blogpage1'
-
+import {BlogPage2} from './blogpage2'
+import {BlogPage3} from './blogpage3'
+import {BlogPage4} from './blogpage4'
+import {BlogPage5} from './blogpage5'
 
 
 
@@ -56,6 +56,18 @@ e.stopPropagation();
                     <Route path="/BlogPage1">
                       <BlogPage1 />
                     </Route>
+                    <Route path="/BlogPage2">
+                      <BlogPage2 />
+                    </Route>
+                    <Route path="/BlogPage3">
+                      <BlogPage3 />
+                    </Route>
+                    <Route path="/BlogPage4">
+                      <BlogPage4 />
+                    </Route>
+                    <Route path="/BlogPage5">
+                      <BlogPage5 />
+                    </Route>
                 </Switch>
                 
               <main id="main-doc">
@@ -89,7 +101,7 @@ e.stopPropagation();
                     <div className="card-body">
                       <h4 className="card-title text-dark">First CV</h4>
                       <p className="card-text text-dark">It was my first try to make a site. So I decided to make CV using such technologies as HTML5 and CSS3.</p>
-                      <span  className="card-link btn btn-info" onClick={this.handleNext}> Show more </span>
+                      <span  className="card-link btn " onClick={this.hide}><Link to="/BlogPage2" > Show more </Link></span>
                       
                     </div>
                   </div>
@@ -100,7 +112,7 @@ e.stopPropagation();
                     <div className="card-body">
                       <h4 className="card-title text-dark">First CV</h4>
                       <p className="card-text text-dark">It was my first try to make a site. So I decided to make CV using such technologies as HTML5 and CSS3.</p>
-                      <a href="blogText1.html" className="card-link">Show more</a>
+                      <span  className="card-link btn " onClick={this.hide}><Link to="/BlogPage3" > Show more </Link></span>
                     </div>
                   </div>
                 </section>
@@ -110,7 +122,7 @@ e.stopPropagation();
                     <div className="card-body">
                       <h4 className="card-title text-dark">First CV</h4>
                       <p className="card-text text-dark">It was my first try to make a site. So I decided to make CV using such technologies as HTML5 and CSS3.</p>
-                      <a href="blogText1.html" className="card-link">Show more</a>
+                      <span  className="card-link btn " onClick={this.hide}><Link to="/BlogPage4" > Show more </Link></span>
                     </div>
                   </div>
                 </section>
@@ -120,13 +132,13 @@ e.stopPropagation();
                     <div className="card-body">
                       <h4 className="card-title text-dark">First CV</h4>
                       <p className="card-text text-dark">It was my first try to make a site. So I decided to make CV using such technologies as HTML5 and CSS3.</p>
-                      <a href="blogText1.html" className="card-link">Show more</a>
+                      <span  className="card-link btn " onClick={this.hide}><Link to="/BlogPage5" > Show more </Link></span>
                     </div>
                   </div>
                 </section>
               </main>
             </div>
-            <div className="col-md-2 col-sm-12 col-xs-12">
+            <div className="col-md-2 col-sm-12 col-xs-12 navibar">
               <nav id="navbar">
                 <h3 className="text-dark">Latest states:</h3>
                 <div className="card" style={{width: '12rem'}}>
