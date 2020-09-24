@@ -5,6 +5,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Particles from 'react-particles-js';
 import uncheck from './function.js'
 import Blog from './Blog'
 
@@ -75,11 +76,119 @@ export default function BasicExample() {
 class Home extends React.Component {
   render() {
     return (
-      <div className="bg  bg-dark text-white">
+      <div className="bg text-white">
+      <div className="particles1"> 
+        <Particles params={{ 
+           "particles": {
+    "number": {
+      "value": 80,
+      "density": {
+        "enable": true,
+        "value_area": 700
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "shape": {
+      "type": "circle",
+      "stroke": {
+        "width": 0,
+        "color": "#000000"
+      },
+      "polygon": {
+        "nb_sides": 5
+      },
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": false,
+      "anim": {
+        "enable": false,
+        "speed": 0.1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 10,
+        "size_min": 0.1,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": true,
+      "distance": 150,
+      "color": "#ffffff",
+      "opacity": 0.4,
+      "width": 1
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "none",
+      "random": false,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": "grab"
+      },
+      "onclick": {
+        "enable": true,
+        "mode": "push"
+      },
+      "resize": true
+    },
+    "modes": {
+      "grab": {
+        "distance": 140,
+        "line_linked": {
+          "opacity": 1
+        }
+      },
+      "bubble": {
+        "distance": 400,
+        "size": 40,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+      },
+      "repulse": {
+        "distance": 200,
+        "duration": 0.4
+      },
+      "push": {
+        "particles_nb": 4
+      },
+      "remove": {
+        "particles_nb": 2
+      }
+    }
+  },
+  "retina_detect": true
+        }} 
+      /></div>
         <div className="showcase centerBlock text-ligth text-center ">
-          <h1 className="welcome font-weight-bold">Welcome at my personal page</h1>
+          <h1 className="welcome font-weight-bold">Welcome at my personal page </h1>
           <p className="font-italic text-monospace text-white-50" >by Vova Semkovych</p>
         </div>
+        
       </div>
     );
   }
@@ -88,7 +197,7 @@ class Home extends React.Component {
 class About extends React.Component {
   render() {
     return (
-       <div className="bgAb showcase">
+       <div className="showcase">
         <h1 className="liabAbout pt-5" align="center" >Little information about me</h1>
         <section className="textBlock text-light">
           <article className="flex-row bioAbout container-fluid flexAbout">

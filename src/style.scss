@@ -25,12 +25,7 @@ html {
 	scroll-behavior: smooth;
 }
 .bg {
-	background-image: url("images/test.jpg");
-	height: 50em;
-	max-height: 50em;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+	z-index: 10;
 }
 .bgas {
 	background-image: url('images/contact.jpg');
@@ -62,9 +57,12 @@ html {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 .centerBlock {
-	padding-top: 16em;
+	padding-top:20vh;
+	user-select: none;
 	.welcome {
+		padding-top: 2em; 
 		font-family: "Arvo", serif;
 		text-shadow: 1px 1px 2px black, 0 0 1em black;
 		font-color: #CDB599FF;
@@ -918,4 +916,13 @@ article {
     width: 10vw;
 	margin-top: 1em;	   
 	}
+}
+.particles1{
+      position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 10;
 }
