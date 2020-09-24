@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const express = require('express');
  const favicon = require('express-favicon');
  const path = require('path');
@@ -46,4 +46,4 @@ const express = require('express');
  });
  app.listen(port);
 
->>>>>>> d7e2b96b2e6c90f9165466170a89965ac5a3f6a3
+

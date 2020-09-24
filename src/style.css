@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body, html {
   height: 100%;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -14,21 +14,40 @@ body::-webkit-scrollbar {
  
 
   /* Full height */
-  height: 100%; 
-  
+  height: 50em; 
+  max-height: 50em;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
 }
+
 
 .bgas {
    background-image: url('images/contact.jpg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
+   height: 100vh;
 }
+.bgas h1{
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #FC766AFF;
+}
+.bgAb { 
 
+  background:linear-gradient(90deg, #5B84B1FF 33%, #5F4B8BFF 66%, #FC766AFF);
+  z-index: 0;
+  
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
 .bgBody { 
   background-image: url("images/container.jpg.png");
   height: 100%; 
@@ -37,22 +56,37 @@ body::-webkit-scrollbar {
 }
 
 .centerBlock{
-	padding-top: 255px;
+	padding-top: 16em;
+}
+.centerBlock .welcome {
+  font-family: "Arvo", serif; 
+  text-shadow: 1px 1px 2px black, 0 0 1em black;
+  font-color: #CDB599FF;
+}
+.centerBlock p {
+-webkit-text-stroke-width: 0.031em;
+-webkit-text-stroke-color: white;
+font-color: #CDB599FF;
 }
 .welcome{
 	text-decoration: underline;	
 }
+.bgAb h1{
+  font-family: "Arvo", serif;
+  -webkit-text-stroke-width: 0.031em; 
+  -webkit-text-stroke-color: #FC766AFF;
+}
 .menuList{
-	font-size: 20px;
+	font-size: 1.25em;
 }
 .menuList:hover {
   left: 0; /* On mouse-over, make the elements appear as they should */
 }
 .container {
-background-image: url("images/container.jpg");
-  width: 600px;
-  
-  padding-top: 250px;
+
+  width: 37.500em;
+  padding-right: 15.625em;
+  padding-top: 18.750em;
   margin: 0 auto
 }
 .contactsUL{
@@ -79,9 +113,10 @@ background-image: url("images/container.jpg");
 	flex-wrap: wrap;
 }
 
-.jumbotron{
-	background-image: url("images/container.jpg")
-	 
+.bgOneMore h1 {
+  font-family: "Arvo", serif; 
+  -webkit-text-stroke-width: 0.031em;
+   -webkit-text-stroke-color: black;
 }
 .flexAbout{
 	display: flex;
@@ -100,29 +135,27 @@ background-image: url("images/container.jpg");
   border-style: groove;
   opacity: 0.5;
   top: 0;
-  left: 35px;
+  left: 2.188em;
   bottom: 0;
-  right: 35px;
+  right: 2.188em;
   position: absolute;
   z-index: -1;   
 }
-
-.bgAb { 
-
-  background:linear-gradient(90deg, #5B84B1FF 33%, #5F4B8BFF 66%, #FC766AFF);
-   
-
-  height: 115em;
+.conkek{
+  padding-top:10em;
+  padding-left: 3em; 
+  padding-right: 3em;
 }
+
 .container-fluid{
 	max-width: 90%;
-	padding-top:25px; 
+	padding-top:1.563em; 
 
 }
 .imgAboutB{
 	width: 83em;
 	height: 13em;
-	border-radius: 15px;
+	border-radius: 0.938em;
 	border-style: groove;
   border-color: #CDB599FF; 
   background-image: url(images/bio1.jpg);
@@ -133,7 +166,7 @@ background-image: url("images/container.jpg");
 .imgAboutE{
   width: 70%;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
    border-color: #CDB599FF; 
   background-image: url(images/edu1.jpg);
@@ -142,7 +175,7 @@ background-image: url("images/container.jpg");
 .imgAboutS{
   width: 70%;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
    border-color: #CDB599FF; 
   background-image: url(images/code1.jpg);
@@ -151,7 +184,7 @@ background-image: url("images/container.jpg");
 .imgAboutH{
   width: 70%;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
    border-color: #CDB599FF; 
   background-image: url(images/hobby1.jpg);
@@ -162,7 +195,7 @@ background-image: url("images/container.jpg");
   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  font-size: 25px;
+  font-size: 1.563em;
  
 }
 .aboutH{
@@ -173,7 +206,7 @@ background-image: url("images/container.jpg");
 .imgAboutB {
   width: 93em;
   height: 15em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/bio.jpg);
   background-size: cover;
@@ -183,7 +216,7 @@ background-image: url("images/container.jpg");
 .imgAboutE {
   width: 93em;
   height: 15em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/edu.jpg);
   background-size: cover;
@@ -193,7 +226,7 @@ background-image: url("images/container.jpg");
 .imgAboutS {
   width: 93em;
   height: 15em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/skills.jpg);
   background-size: cover;
@@ -202,7 +235,7 @@ background-image: url("images/container.jpg");
 .imgAboutH {
   width: 93em;
   height: 15em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/hobby.jpg);
   background-size: cover;
@@ -213,17 +246,17 @@ background-image: url("images/container.jpg");
   flex-wrap: nowrap!important;
 }
 .aboutH{
-  font-size:20px;
+  font-size:1.250em;
 }
 .aboutP{
-  font-size: 30px;
+  font-size: 1.875em;
 }
 }
 @media screen and (max-device-width:1440px), screen and (max-width:1440px) {
 .imgAboutB {
   width: 63em!important;
   height: 13em!important;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/bio.jpg);
   background-size: cover;
@@ -232,7 +265,7 @@ background-image: url("images/container.jpg");
 .imgAboutE {
   width: 63em!important;
   height: 13em!important;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/edu.jpg);
   background-size: cover;
@@ -241,7 +274,7 @@ background-image: url("images/container.jpg");
 .imgAboutS {
   width: 63em!important;
   height: 13em!important;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/skills.jpg);
   background-size: cover;
@@ -250,7 +283,7 @@ background-image: url("images/container.jpg");
 .imgAboutH {
   width: 63em!important;
   height: 13em!important;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/hobby.jpg);
   background-size: cover;
@@ -261,17 +294,17 @@ background-image: url("images/container.jpg");
   flex-wrap: nowrap!important;
 }
 .aboutH{
-  font-size:19px;
+  font-size:1.188em;
 }
 .aboutP{
-  font-size: 30px;
+  font-size: 1.875em;
 }
 }
 @media screen and (max-device-width:1024px), screen and (max-width:1024px) {
 .imgAboutB{
   width: 93em!important;  
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/bio1.jpg);
   background-size: cover;
@@ -280,7 +313,7 @@ background-image: url("images/container.jpg");
 .imgAboutE{
   width: 93em!important;  
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/edu1.jpg);
   background-size: cover;
@@ -289,7 +322,7 @@ background-image: url("images/container.jpg");
 .imgAboutS{
   width: 93em!important;  
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/code1.jpg);
   background-size: cover;
@@ -298,7 +331,7 @@ background-image: url("images/container.jpg");
 .imgAboutH{
   width: 93em!important;  
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/hobby1.jpg);
   background-size: cover;
@@ -309,17 +342,17 @@ background-image: url("images/container.jpg");
   flex-wrap: nowrap!important;
 }
 .aboutH{
-  font-size:15px;
+  font-size:0.938em;
 }
 .aboutP{
-  font-size: 25px;
+  font-size:1.563em;
 }
 }
 @media screen and (max-device-width:960px), screen and (max-width:960px) {
 .imgAboutB{
   width: 133em!important;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/bio1.jpg);
   background-size: cover;
@@ -329,7 +362,7 @@ background-image: url("images/container.jpg");
 .imgAboutE{
   width: 133em!important;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/edu1.jpg);
   background-size: cover;
@@ -340,7 +373,7 @@ background-image: url("images/container.jpg");
 .imgAboutS{
   width: 133em!important;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/code1.jpg);
   background-size: cover;
@@ -350,7 +383,7 @@ background-image: url("images/container.jpg");
 .imgAboutH{
   width: 133em!important;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/hobby1.jpg);
   background-size: cover;
@@ -366,7 +399,7 @@ background-image: url("images/container.jpg");
 .imgAboutB{
   width: 63em;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/bio1.jpg);
   background-size: cover;
@@ -375,7 +408,7 @@ background-image: url("images/container.jpg");
 .imgAboutE{
   width: 63em;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/edu1.jpg);
   background-size: cover;
@@ -384,7 +417,7 @@ background-image: url("images/container.jpg");
 .imgAboutS{
   width: 63em;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/code1.jpg);
   background-size: cover;
@@ -393,7 +426,7 @@ background-image: url("images/container.jpg");
 .imgAboutH{
   width: 63em;
   height: 13em;
-  border-radius: 15px;
+  border-radius: 0.938em;
   border-style: groove;
   background-image: url(images/hobby1.jpg);
   background-size: cover;
@@ -415,7 +448,7 @@ font-family: 'Playfair Display', serif;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  height: 100vh;
   display: flex;
 	justify-content: center;
 	align-self: center;
@@ -423,23 +456,39 @@ font-family: 'Playfair Display', serif;
 }
 .h1Blog{
 	
-padding-top: 280px;
-padding-left: 100px;
+padding-top: 7.500em;
+padding-left: 3.250em;
   text-transform: uppercase;
   background: linear-gradient(30deg, #FC766AFF 33%, #5F4B8BFF 66%, #5B84B1FF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #0B2349;
+  font-family: "Arvo", serif; 
+  -webkit-text-stroke-width: 0.5px; 
+  -webkit-text-stroke-color: #5F4B8BFF;
 }
 .main-section{
-	margin: 5px;
+	margin: 0.313em;
 }
-.topic
+.topic1
 {
-  padding-top:55px;
+  padding-top:3.438em;
   background-image:url(images/code2.jpg);
   background-size:cover;  
-  border-radius:50px;
+  border-radius:3.125em;
+  background-opacity: 0.5;
+ 
+  border-style: groove;
+   border-color: #CDB599FF; 
+  display: flex;
+  flex-direction: row;
+  }
+  .topic2
+{
+  padding-top:3.438em;
+  background-image:url(images/bio.jpg);
+  background-size:cover;  
+  border-radius:3.125em;
   background-opacity: 0.5;
  
   border-style: groove;
@@ -449,17 +498,38 @@ padding-left: 100px;
   }
 .utopic
 {
-  padding-top:155px;
+  padding-top:9.688em;
   opacity: 1;
-margin-bottom: 155px;
+margin-bottom: 9.688em;
   display: flex;
   flex-direction: row;
   }
-
+.blogSec{
+  border: 5px solid #5B84B1FF; 
+  border-radius: 7px;
+}
 .abss{
-   border-radius: 15px;
+   border-radius: 0.938em;
   border-style: groove;
    border-color: #CDB599FF; 
+   background-color: black;
+   opacity: 0.7;
+}
+.cardM{
+  width: 18.750em;
+  max-height: 31.250em;
+}
+.cardB{
+  width: 100%; 
+  max-height: 12.500em;
+}
+.imgPost{
+  max-width: 12em; 
+  max-height: 12em
+}
+.btnPost{
+  margin-bottom: 1em;
+
 }
 .btnNavPost:hover{
 -webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
@@ -504,580 +574,28 @@ margin-bottom: 155px;
   border-bottom-width: 4px;
   border-left-width: 4px;
 }
-.cardM:hover {
-  -webkit-animation: wobble-hor-bottom 0.8s both;
-          animation: wobble-hor-bottom 0.8s both;
-}
-@-webkit-keyframes wobble-hor-bottom {
-  0%,
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-  }
-  15% {
-    -webkit-transform: translateX(-30px) rotate(-6deg);
-            transform: translateX(-30px) rotate(-6deg);
-  }
-  30% {
-    -webkit-transform: translateX(15px) rotate(6deg);
-            transform: translateX(15px) rotate(6deg);
-  }
-  45% {
-    -webkit-transform: translateX(-15px) rotate(-3.6deg);
-            transform: translateX(-15px) rotate(-3.6deg);
-  }
-  60% {
-    -webkit-transform: translateX(9px) rotate(2.4deg);
-            transform: translateX(9px) rotate(2.4deg);
-  }
-  75% {
-    -webkit-transform: translateX(-6px) rotate(-1.2deg);
-            transform: translateX(-6px) rotate(-1.2deg);
-  }
-}
-
-
-=======
-body, html {
-  height: 100%;
-    -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-body::-webkit-scrollbar {
-  display: none;/*Chrome Safari Opera*/
-}
-
-.bg { 
-  /* The image used */
-  background-image: url("images/test.jpg");
- 
-
-  /* Full height */
-  height: 100%; 
-  
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bgas {
-   background-image: url('images/contact.jpg');
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-}
-
-.bgBody { 
-  background-image: url("images/container.jpg.png");
-  height: 100%; 
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.centerBlock{
-	padding-top: 255px;
-}
-.welcome{
-	text-decoration: underline;	
-}
-.menuList{
-	font-size: 20px;
-}
-.menuList:hover {
-  left: 0; /* On mouse-over, make the elements appear as they should */
-}
-.container {
-background-image: url("images/container.jpg");
-  width: 600px;
-  
-  padding-top: 250px;
-  margin: 0 auto
-}
-.contactsUL{
-	list-style: none;
-}
-.ancContact {
-  color: white;
-	text-decoration: none;
-	
-}
-.ancContact:hover {
-  color: #FC766AFF;
-  text-decoration: none;
-}
-
-.projDiv{
-	padding-top: 5%;
-	padding-right: 10%;
-	padding-left: 10%;
-  max-height: 100%;
-	display: flex;
-	justify-content: space-around;
-
-	flex-wrap: wrap;
-}
-
-.jumbotron{
-	background-image: url("images/container.jpg")
-	 
-}
-.flexAbout{
-	display: flex;
- 
-}
-.textBlock {
- 
-  display: block;
-  position: relative;
-}
-
-.textBlock::after {
-  content: "";
-  background-image: url(images/page.jpg);
-  background-size: cover; 
-  border-style: groove;
-  opacity: 0.5;
-  top: 0;
-  left: 35px;
-  bottom: 0;
-  right: 35px;
-  position: absolute;
-  z-index: -1;   
-}
-
-.bgAb { 
-
-  background:linear-gradient(90deg, #5B84B1FF 33%, #5F4B8BFF 66%, #FC766AFF);
-   
-
-  height: 115em;
-}
-.container-fluid{
-	max-width: 90%;
-	padding-top:25px; 
-
-}
-.imgAboutB{
-	width: 83em;
-	height: 13em;
-	border-radius: 15px;
-	border-style: groove;
-  border-color: #CDB599FF; 
-  background-image: url(images/bio1.jpg);
-  background-size: cover;
-}
-
-
-.imgAboutE{
-  width: 70%;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-   border-color: #CDB599FF; 
-  background-image: url(images/edu1.jpg);
-  background-size: cover;
-}
-.imgAboutS{
-  width: 70%;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-   border-color: #CDB599FF; 
-  background-image: url(images/code1.jpg);
-  background-size: cover;
-}
-.imgAboutH{
-  width: 70%;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-   border-color: #CDB599FF; 
-  background-image: url(images/hobby1.jpg);
-  background-size: cover;
-}
-.aboutP {
-  
-  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  font-size: 25px;
- 
-}
-.aboutH{
-  
-}
-
-@media screen and (max-device-width:2560px), screen and (max-width:2560px) {
-.imgAboutB {
-  width: 93em;
-  height: 15em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/bio.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-  background-position: right center;
-}
-.imgAboutE {
-  width: 93em;
-  height: 15em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/edu.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-  background-position: right center;
-}
-.imgAboutS {
-  width: 93em;
-  height: 15em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/skills.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.imgAboutH {
-  width: 93em;
-  height: 15em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/hobby.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.flexAbout{
-  display: flex;
-  flex-wrap: nowrap!important;
-}
-.aboutH{
-  font-size:20px;
-}
-.aboutP{
-  font-size: 30px;
-}
-}
-@media screen and (max-device-width:1440px), screen and (max-width:1440px) {
-.imgAboutB {
-  width: 63em!important;
-  height: 13em!important;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/bio.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.imgAboutE {
-  width: 63em!important;
-  height: 13em!important;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/edu.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.imgAboutS {
-  width: 63em!important;
-  height: 13em!important;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/skills.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.imgAboutH {
-  width: 63em!important;
-  height: 13em!important;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/hobby.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.flexAbout{
-  display: flex;
-  flex-wrap: nowrap!important;
-}
-.aboutH{
-  font-size:19px;
-}
-.aboutP{
-  font-size: 30px;
-}
-}
-@media screen and (max-device-width:1024px), screen and (max-width:1024px) {
-.imgAboutB{
-  width: 93em!important;  
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/bio1.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.imgAboutE{
-  width: 93em!important;  
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/edu1.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.imgAboutS{
-  width: 93em!important;  
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/code1.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.imgAboutH{
-  width: 93em!important;  
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/hobby1.jpg);
-  background-size: cover;
-  flex-wrap: nowrap;
-}
-.flexAbout{
-  display: flex;
-  flex-wrap: nowrap!important;
-}
-.aboutH{
-  font-size:15px;
-}
-.aboutP{
-  font-size: 25px;
-}
-}
-@media screen and (max-device-width:960px), screen and (max-width:960px) {
-.imgAboutB{
-  width: 133em!important;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/bio1.jpg);
-  background-size: cover;
-  background-position: right center;
-  padding-top: 17em;
-}
-.imgAboutE{
-  width: 133em!important;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/edu1.jpg);
-  background-size: cover;
-  background-position:  center;
-  padding-top: 17em;
-
-}
-.imgAboutS{
-  width: 133em!important;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/code1.jpg);
-  background-size: cover;
-  background-position: right center;
-  padding-top: 17em;
-}
-.imgAboutH{
-  width: 133em!important;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/hobby1.jpg);
-  background-size: cover;
-  background-position:  center;
-  padding-top: 17em;
-}
-.flexAbout{
-  display: flex;
-  flex-wrap: wrap!important;
-}
-}
-@media screen and (max-device-width:425px), screen and (max-width:425px) {
-.imgAboutB{
-  width: 63em;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/bio1.jpg);
-  background-size: cover;
- 
-}
-.imgAboutE{
-  width: 63em;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/edu1.jpg);
-  background-size: cover;
- 
-}
-.imgAboutS{
-  width: 63em;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/code1.jpg);
-  background-size: cover;
- 
-}
-.imgAboutH{
-  width: 63em;
-  height: 13em;
-  border-radius: 15px;
-  border-style: groove;
-  background-image: url(images/hobby1.jpg);
-  background-size: cover;
- 
-}
-.flexAbout{
-  display: flex;
-  flex-wrap: wrap!important;
-}
-}
-
-article{
-font-family: 'Playfair Display', serif;
-
-}
-.topBackGR { 
-  background-image:  url(images/idea1.png);
-  background-size: cover; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-  display: flex;
-	justify-content: center;
-	align-self: center;
-
-}
-.h1Blog{
-	
-padding-top: 280px;
-padding-left: 100px;
-  text-transform: uppercase;
-  background: linear-gradient(30deg, #FC766AFF 33%, #5F4B8BFF 66%, #5B84B1FF);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0B2349;
-}
-.main-section{
-	margin: 5px;
-}
-.topic
-{
-  padding-top:55px;
-  background-image:url(images/code2.jpg);
-  background-size:cover;  
-  border-radius:50px;
-  background-opacity: 0.5;
- 
-  border-style: groove;
-   border-color: #CDB599FF; 
-  display: flex;
-  flex-direction: row;
-  }
-.utopic
-{
-  padding-top:155px;
-  opacity: 1;
-margin-bottom: 155px;
-  display: flex;
-  flex-direction: row;
-  }
-
-.abss{
-   border-radius: 15px;
-  border-style: groove;
-   border-color: #CDB599FF; 
-}
-.btnNavPost:hover{
--webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        background: black;
-	        text-decoration-color: white;
-}
-@-webkit-keyframes flip-horizontal-bottom {
-  0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
-  100% {
-    -webkit-transform: rotateX(-180deg);
-            transform: rotateX(-180deg);
-  }
-}
-@keyframes flip-horizontal-bottom {
-  0% {
-    -webkit-transform: rotateX(0);
-            transform: rotateX(0);
-  }
-  100% {
-    -webkit-transform: rotateX(-180deg);
-            transform: rotateX(-180deg);
-  }
-}
-
-.arrow {
+.arrowB {
 
   height: 5vw;
   width: 5vw;
   border-style: solid;
   border-color: white;
-  border-width: 0px 0px 1px 1px;
+  border-width: 0px 1px 1px 0px;
   transform: rotate(45deg);
   transition: border-width 150ms ease-in-out;
 
 }
 
-.arrow:hover {
+.arrowB:hover {
   border-bottom-width: 4px;
-  border-left-width: 4px;
-}
-.cardM:hover {
-  -webkit-animation: wobble-hor-bottom 0.8s both;
-          animation: wobble-hor-bottom 0.8s both;
-}
-@-webkit-keyframes wobble-hor-bottom {
-  0%,
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
-  }
-  15% {
-    -webkit-transform: translateX(-30px) rotate(-6deg);
-            transform: translateX(-30px) rotate(-6deg);
-  }
-  30% {
-    -webkit-transform: translateX(15px) rotate(6deg);
-            transform: translateX(15px) rotate(6deg);
-  }
-  45% {
-    -webkit-transform: translateX(-15px) rotate(-3.6deg);
-            transform: translateX(-15px) rotate(-3.6deg);
-  }
-  60% {
-    -webkit-transform: translateX(9px) rotate(2.4deg);
-            transform: translateX(9px) rotate(2.4deg);
-  }
-  75% {
-    -webkit-transform: translateX(-6px) rotate(-1.2deg);
-            transform: translateX(-6px) rotate(-1.2deg);
-  }
+  border-right-width: 4px;
 }
 
 
->>>>>>> d7e2b96b2e6c90f9165466170a89965ac5a3f6a3
+#post{
+  opacity: 1;
+  transition: opacity 1s;
+}
+#post.hide {
+  opacity: 0;
+}
